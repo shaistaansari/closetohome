@@ -16,3 +16,57 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'partials/close';
+
+.carousel-inner {}
+
+.carousel-inner {
+    background: #009ED4;     
+    padding-bottom: 370px;
+    padding-top: 0;
+    overflow: visible;
+    margin-top: 50px;
+}
+
+.carousel-caption {
+    bottom: -200px;
+    color:  white;
+    &.first {
+    	bottom: 300px;
+    }
+}
+
+div#myCarousel {
+    padding-top: 0;
+}
+
+div#myCarousel {}
+
+.marketing {
+	.blue-bar {
+			text-align: center;
+			padding: 20px 0 40px;
+			margin-top: 50px;
+			h4 {
+				padding-bottom: 30px;
+			}
+	}
+}
+
+.form-fields {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+input#zipcode {
+	width: 100%;
+	padding: 0 3px;
+	color: black;
+}
+
+footer {
+	padding: 30px;
+}
+
+.blue-bar.results {
+	padding: 30px;
+}
