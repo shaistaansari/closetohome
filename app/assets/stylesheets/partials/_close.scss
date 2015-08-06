@@ -28,9 +28,9 @@ margin-bottom: 1.2em;
 }
 
 .resultsMain{
-height: 300px;
-background-color: whitesmoke;
-color: red;
+	height: 300px;
+	background-color: whitesmoke;
+	color: red;
 }
 body{  
 	font-family: 'Montserrat', sans-serif;
@@ -122,7 +122,7 @@ body{
 
 .carousel-control.left, .carousel-control.right {
 	background: none !important; 
-	filter: progid: none !important; 
+	// filter: progid: none !important; 
 	opacity: 1;
 	text-shadow: none;
 }
