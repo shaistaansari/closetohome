@@ -39,7 +39,7 @@ class UsersController < ApplicationController
 			modSchool["safe"] = school["safe"]
 			modSchool["name_of_school"] = school["name_of_school"]
 			modSchool["location"] = school["location"]
-			modSchool["street_address"] = school["address"]
+			modSchool["street_address"] = school["street_address"]
 			modSchool["zip_code"] = school["zip_code"]
 			modSchool["website"] = school["website"]
 			modSchool["effective_leaders"] = school["effective_leaders"]
