@@ -1,0 +1,63 @@
+
+
+
+
+
+
+
+<div class="row posRowMarginTop">
+  <div class="col-lg-12 posCenter">
+      <h4>Please enter zipcode AND select the school range that you are looking for:</h4>
+  </div>
+</div>
+
+<%= form_tag(users_finalpage_path, method: :get) do %>
+  <div class="row">
+    <div class="col-sm-10 col-sm-shift-1">
+      <%= label_tag (:zipcode, "Enter Zipcode") %>
+      <%= text_field_tag :zipcode, nil, required: true, placeholder: "ZIP CODE HERE" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <radiogroup>
+        <!-- <div class="posRowMarginTop posCenter"> -->
+      <div class="col-sm-4">
+          <%= image_tag("baby.svg", class:"img-circle",  alt:"Generic placeholder image", width:"140", height:"140")  %>
+          <h3 class="mt-5"><%= label_tag 'Early Childhood' %></h3>
+          <%= radio_button_tag 'persona', "baby", false, required: true, class: 'chkSizeLg' %>
+      </div>
+  	 
+      <div class="col-sm-4">
+        <%= image_tag("childhood.svg",  class:"img-circle",  alt:"Generic placeholder image", width:"140", height:"140")  %>
+        <h3><%= label_tag 'Elementary School' %></h3>
+        <%= radio_button_tag 'persona', "child", false, required: true, class: 'chkSizeLg' %> 
+      </div>
+  	  
+    
+    
+      <div class="col-sm-4">
+        <%= image_tag("teen.svg",  class:"img-circle",  alt:"Generic placeholder image", width:"140", height:"140")  %>
+        <h3><%= label_tag 'High School' %></h3>
+        <%= radio_button_tag 'persona', "teen", false, required: true, class: 'chkSizeLg' %>
+      </div>
+    </radiogroup>
+
+    <!-- </div> -->
+    <!-- /.row checkboxes -->
+        <!-- </ul> -->
+<!--         <div class="row">
+          <div class="col-lg-12 posCenter posMiddle">
+          <h4>Select any one option!</h4>
+          </div>
+        </div> -->
+       <!-- </div>  -->
+    
+  </div>
+
+  <div class="row">
+    <%= submit_tag 'Search', class: 'btn btn btn-danger btn-lg' %>
+  </div>
+  
+  
+<% end %>
