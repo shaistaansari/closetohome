@@ -17,21 +17,21 @@
 @import "bootstrap";
 @import 'partials/close';
 
-.carousel-inner {}
+
 
 .carousel-inner {
     background: #009ED4;     
-    padding-bottom: 370px;
+    padding-bottom: 250px;
     padding-top: 0;
     overflow: visible;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .carousel-caption {
     bottom: -200px;
     color:  white;
     &.first {
-    	bottom: 300px;
+    	bottom: -200px;
     }
 }
 
