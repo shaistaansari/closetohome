@@ -161,7 +161,7 @@ end
 			https = Net::HTTP.new(uri.host, uri.port)
 			https.use_ssl = true
 			https.verify_mode = OpenSSL::SSL::VERIFY_NONE
-			request = Net::HTTP::Post.new(uri.path, initheader = {'content-type' =>'application/json', 'x-ns-api-token' => '55b13546374bb105eefa0d69', 'x-ns-accepts' => 'html', 'x-ns-template' => '55ba57a218c29f773c073cb5'})
+			request = Net::HTTP::Post.new(uri.path, initheader = {'content-type' =>'application/json', 'x-ns-api-token' => Rails.application.secrets.ns_token, 'x-ns-accepts' => 'html', 'x-ns-template' => Rails.application.secrets.ns_template})
 
 			request.body = collectAllData(personas,zip)
 			
